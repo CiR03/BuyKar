@@ -1,0 +1,53 @@
+/* body{
+    background-image: url(./web-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+} */
+@media (max-width: 768px){
+    .START_RIDE button{
+        min-height: auto;
+        min-width: auto;
+        font-size: 10px;
+        font-weight: 900;
+        text-align: center
+    }
+}
+.badge
+{
+width: 25px; 
+height: 25px;
+border-radius: 50%; 
+background-color: rgb(25, 0, 255); 
+margin-left: -5px; 
+color: white; 
+display: flex; 
+justify-content: center; 
+align-items: center;
+margin-top: -5px;
+}
+.icons a i:hover{
+    transform: rotate(360deg);
+   transition-duration: 1s;
+}
+
+/* <-----------------Buykar_Form-------------> */
+
+#form input{
+border: none;
+outline: none;
+border-bottom: 1px solid pink;
+transition-duration: 1s;
+transition-property: all;
+transition-timing-function: ease;
+transform-origin: left;
+}
+#form label::first-letter
+{
+    color: rgb(243, 158, 172);
+    font-weight: bold;
+}
+#form input[type=number]::-webkit-inner-spin-button,::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+}

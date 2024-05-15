@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buykar</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/fontawesome.min.css"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="./Buykar.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body style="overflow-x: hidden;">
+
+  <!-------Navbar------->
+  <nav class="navbar navbar-expand-lg bg-info navbar-light fs-6 h1">
+    <div class="container-fluid">
+      <img src="./Logo.png" alt="BrandName" style="width: 80px; height: 30px;" class="me-5 ms-2">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-white">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Today deals </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Customer Service </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#Car">Car</a></li>
+              <li><a class="dropdown-item" href="#Bike">Bike</a></li>
+              <li><a class="dropdown-item" href="#Scooter">Scooter</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">E-Vehical</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2 form-outline-success" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+          <span class="text-light mt-1 ms-2 fs-4" ><i class="fa-solid fa-cart-shopping"></i></span>
+          <div class="badge">
+            <span id="num">0</span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-------Carousel-Banners------->
+  <div class="container bg-primary p-1 w-75">
+    <div class="row">
+      <div id="carouselExampleDark" class="carousel carousel-light slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="5000">
+            <img src="./Banners/Bikeban-1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="./Banners/Bikeban-2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="./Banners/carban-1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="./Banners/carban-2.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+</div>
+  <!-------StartRide-Btn------->
+  <div class="container-fluid text-center z-1 mt-5" style="position:absolute;">
+    <div class="row">
+      <div class="START_RIDE w-100">
+       <a class="btn btn-outline-primary btn-light" style="text-decoration: none;" href="#LOG"><B>START RIDE</B></a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-------Car-Bike-BG------->
+  <div class="row mt-5">
+    <div class="bg-wallpaper">
+      <img src="./Wallpaper-Croped2.jpg" class="opacity-100 img-fluid w-100" alt="Wallpaper-Bg"
+        style="position:relative;">
+    </div>
+  </div>
+
+  <div class="containe text-center text-white mt-5" style="background-color: rgb(214, 214, 212);">
+    <!-- Grid container -->
+    <div class="container p-4">
+        <p class="d-flex justify-content-center align-items-center">
+          <span style="word-spacing: 15px; letter-spacing: 5px;" class="me-3 text-dark text-uppercase fs-5">Take A Look & Shopi<span class="text-danger">FY.!</span></span>
+        </p>
+    </div>
+  </div>
+
+  <!-------Cards-Bike------>
+
+  <div class="container" id="Bike">
+    <div class="row">
+    <div class="row row-cols-2 row-cols-md-4 g-4">
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="./Bike/TVS Rider.png" class="card-img-top" alt="...">
+
+          <!-------Card-Body------>
+
+          <div class="card-body">
+            <h5 class="card-title">TVS Rider</h5>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>(123)
+            <i class="fa-solid fa-bookmark float-end text-secondary"></i>
+          </div>
+
+          <!-------Card-Footer------>
+
+          <div class="row text-center align-items-center g-0 border">
+            <div class="col-5 text-success">
+              <h6 style="font-weight: 400; font-size: clamp(15px,2vw,30px);">₹.80000</h6>
+            </div>
+            <div class="col-7">
+              <a id="plu" class="btn btn-primary w-100 p-2 rounded-0"
+                style="font-weight: 500; font-size: clamp(10px,1vw,50px);">ADD TO CART</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="./Bike/2018-Honda-CB-125-Shine-SP-Yellow-press-right-side.jpg" class="card-img-top" alt="...">
+
+          <!-------Card-Body------>
+
+          <div class="card-body">
+            <h5 class="card-title">Honda-CB-125</h5>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>(123)
+            <i class="fa-solid fa-bookmark float-end text-secondary"></i>
+          </div>
+
+          <!-------Card-Footer------>
+
+          <div class="row text-center align-items-center g-0 border">
+            <div class="col-5 text-success">
+              <h6 style="font-weight: 400; font-size: clamp(15px,2vw,30px);">₹.80000</h6>
+            </div>
+            <div class="col-7">
+              <a id="plus"class="btn btn-primary w-100 p-2 rounded-0"
+                style="font-weight: 500; font-size: clamp(10px,1vw,50px);">ADD TO CART</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="./Bike/Honda XR 150L-1588411008-92.jpg" class="card-img-top" alt="...">
+
+          <!-------Card-Body------>
+
+          <div class="card-body">
+            <h5 class="card-title">Honda XR 150L</h5>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>(123)
+            <i class="fa-solid fa-bookmark float-end text-secondary"></i>
+          </div>
+
+          <!-------Card-Footer------>
+
+          <div class="row text-center align-items-center g-0 border">
+            <div class="col-5 text-success">
+              <h6 style="font-weight: 400; font-size: clamp(15px,2vw,30px);">₹.80000</h6>
+            </div>
+            <div class="col-7">
+              <a id="plus" href="#" class="btn btn-primary w-100 p-2 rounded-0"
+                style="font-weight: 500; font-size: clamp(10px,1vw,50px);">ADD TO CART</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="./Bike/KTM-Duke-390-E20-BS6-Liquid-Metal.jpg" class="card-img-top" alt="...">
+
+          <!-------Card-Body------>
+
+          <div class="card-body">
+            <h5 class="card-title">KTM-Duke-390</h5>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>(123)
+            <i class="fa-solid fa-bookmark float-end text-secondary"></i>
+          </div>
+
+          <!-------Card-Footer------>
+
+          <div class="row text-center align-items-center g-0 border">
+            <div class="col-5 text-success">
+              <h6 style="font-weight: 400; font-size: clamp(15px,2vw,30px);">₹.80000</h6>
+            </div>
+            <div class="col-7">
+              <a id="plus" href="#" class="btn btn-primary w-100 p-2 rounded-0"
+                style="font-weight: 500; font-size: clamp(10px,1vw,50px);">ADD TO CART</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+    <!-------Cards-Car------>
+
+    <div class="container" id="Car">
+      <div class="row">
+      <div class="row row-cols-2 row-cols-md-4 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="./Car/AR-AM-Ignis-Exterior-360-Web-Front-3-4-870-x-448.jpg" class="card-img-top" alt="...">
+
+            <!-------Card-Body------>
+
+            <div class="card-body">
+              <h5 class="card-title">Car Exterior-360</h5>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>(1004)
+              <i class="fa-solid fa-bookmark float-end text-secondary"></i>
+            </div>
+
+            <!-------Card-Footer------>
+
+            <div class="row text-center align-items-center g-0 border">
+              <div class="col-5 text-success">
+                <h6 style="font-weight: 400; font-size: clamp(15px,2vw,30px);">₹.12L</h6>
+              </div>
+              <div class="col-7">
+                <a id="plus" href="#" class="btn btn-primary w-100 p-2 rounded-0"
+                  style="font-weight: 500; font-size: clamp(10px,1vw,50px);">ADD TO CART</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="./Car/Suzuki-Ignis-900x595-1.jpg" class="card-img-top" alt="...">
+
+            <!-------Card-Body------>
+
+            <div class="card-body">
+              <h5 class="card-title">Suzuki-Ignis</h5>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>(2165)
+              <i class="fa-solid fa-bookmark float-end text-secondary"></i>
+            </div>
+
+            <!-------Card-Footer------>
+
+            <div class="row text-center align-items-center g-0 border">
+              <div class="col-5 text-success">
+                <h6 style="font-weight: 400; font-size: clamp(15px,2vw,30px);">₹.8L</h6>
+              </div>
+              <div class="col-7">
+                <a id="plus" href="#" class="btn btn-primary w-100 p-2 rounded-0"
+                  style="font-weight: 500; font-size: clamp(10px,1vw,50px);">ADD TO CART</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="./Car/si7jlh2a.png" class="card-img-top" alt="...">
+
+            <!-------Card-Body------>
+
+            <div class="card-body">
+              <h5 class="card-title">Car 123 CB</h5>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>(458)
+              <i class="fa-solid fa-bookmark float-end text-secondary"></i>
+            </div>
+
+            <!-------Card-Footer------>
+
+            <div class="row text-center align-items-center g-0 border">
+              <div class="col-5 text-success">
+                <h6 style="font-weight: 400; font-size: clamp(15px,2vw,30px);">₹.10L</h6>
+              </div>
+              <div class="col-7">
+                <a id="plus" href="#" class="btn btn-primary w-100 p-2 rounded-0"
+                  style="font-weight: 500; font-size: clamp(10px,1vw,50px);">ADD TO CART</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="./Car/CRETA_Polar_White.jpg" class="card-img-top" alt="...">
+
+            <!-------Card-Body------>
+
+            <div class="card-body">
+              <h5 class="card-title">CRETA_Polar</h5>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>(665)
+              <i class="fa-solid fa-bookmark float-end text-secondary"></i>
+            </div>
+
+            <!-------Card-Footer------>
+
+            <div class="row text-center align-items-center g-0 border">
+              <div class="col-5 text-success">
+                <h6 style="font-weight: 400; font-size: clamp(15px,2vw,30px);">₹.7L</h6>
+              </div>
+              <div class="col-7">
+                <a id="plus" href="#" class="btn btn-primary w-100 p-2 rounded-0"
+                  style="font-weight: 500; font-size: clamp(10px,1vw,50px);">ADD TO CART</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <!-------Cards-Scooter------>
+      <div class="container" id="Scooter">
+        <div class="row">
+          <div class="row row-cols-2 row-cols-md-4 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="./Scooter/go9ebcsc.png" class="card-img-top" alt="...">
+
+                <!-------Card-Body------>
+
+                <div class="card-body">
+                  <h5 class="card-title">Suzuki T5</h5>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>(524)
+                  <i class="fa-solid fa-bookmark float-end text-secondary"></i>
+                </div>
+
+                <!-------Card-Footer------>
+
+                <div class="row text-center align-items-center g-0 border">
+                  <div class="col-5 text-success">
+                    <h6 style="font-weight: 400; font-size: clamp(15px,2vw,30px);">₹.85000</h6>
+                  </div>
+                  <div class="col-7">
+                    <a id="plus" href="#" class="btn btn-primary w-100 p-2 rounded-0"
+                      style="font-weight: 500; font-size: clamp(10px,1vw,50px);">ADD TO CART</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img src="./Scooter/new-honda-activa-6g-in-pearl-spartan-red-color.jpg" class="card-img-top" alt="...">
+
+                <!-------Card-Body------>
+
+                <div class="card-body">
+                  <h5 class="card-title">Honda-activa-6g</h5>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>(324)
+                  <i class="fa-solid fa-bookmark float-end text-secondary"></i>
+                </div>
+
+                <!-------Card-Footer------>
+
+                <div class="row text-center align-items-center g-0 border">
+                  <div class="col-5 text-success">
+                    <h6 style="font-weight: 400; font-size: clamp(15px,2vw,30px);">₹75000</h6>
+                  </div>
+                  <div class="col-7">
+                    <a id="plus" href="#" class="btn btn-primary w-100 p-2 rounded-0"
+                      style="font-weight: 500; font-size: clamp(10px,1vw,50px);">ADD TO CART</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img src="./Scooter/1506713191086-092917-honda-riding-assist-e-014hOr.jpg" class="card-img-top"
+                  alt="...">
+
+                <!-------Card-Body------>
+
+                <div class="card-body">
+                  <h5 class="card-title">Honda</h5>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>(159)
+                  <i class="fa-solid fa-bookmark float-end text-secondary"></i>
+                </div>
+
+                <!-------Card-Footer------>
+
+                <div class="row text-center align-items-center g-0 border">
+                  <div class="col-5 text-success">
+                    <h6 style="font-weight: 400; font-size: clamp(15px,2vw,30px);">₹.70000</h6>
+                  </div>
+                  <div class="col-7">
+                    <a id="plus" href="#" class="btn btn-primary w-100 p-2 rounded-0"
+                      style="font-weight: 500; font-size: clamp(10px,1vw,50px);">ADD TO CART</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <img src="./Scooter/tqb8tlrq.png" class="card-img-top" alt="...">
+
+                <!-------Card-Body------>
+
+                <div class="card-body">
+                  <h5 class="card-title">TQ B8tlrq</h5>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>(665)
+                  <i class="fa-solid fa-bookmark float-end text-secondary"></i>
+                </div>
+
+                <!-------Card-Footer------>
+
+                <div class="row text-center align-items-center g-0 border">
+                  <div class="col-5 text-success">
+                    <h6 style="font-weight: 400; font-size: clamp(15px,2vw,30px);">₹.1L</h6>
+                  </div>
+                  <div class="col-7">
+                    <a id="plus" href="#" class="btn btn-primary w-100 p-2 rounded-0"
+                      style="font-weight: 500; font-size: clamp(10px,1vw,50px);">ADD TO CART</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+        <!-- SignUp Button..! -->
+        <div class="containe text-center text-white mt-5" style="background-color: rgb(214, 214, 212);">
+          <!-- Grid container -->
+          <div class="container p-4">
+            <!-- Section: CTA -->
+            <section class="">
+              <p class="d-flex justify-content-center align-items-center">
+                <span id="LOG" class="me-3 text-dark">Register for free</span>
+                  <a class="btn btn-outline-primary btn-light" style="text-decoration: none;" href="./Buykar_form.html">Sign up!</a>
+              </p>
+            </section>
+            <!-- Section: CTA -->
+          </div>
+        </div>
+
+<!---------- Footer-Box--------------->
+      <div class="mt-5">
+
+        <!-- Footer -->
+        <footer class="text-center text-lg-start text-white" style="background-color: #0055ff">
+          <!-- Section: Social media -->
+          <section class="d-flex justify-content-between p-4" style="background-color: #2600ff">
+            <!-- Left -->
+            <div class="me-5">
+              <span>Get connected with us on social networks:</span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div class="icons">
+              <a href="" class="text-white me-4">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="" class="text-white me-4">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="" class="text-white me-4">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="" class="text-white me-4">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="" class="text-white me-4">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+            <!-- Right -->
+          </section>
+          <!-- Section: Social media -->
+
+          <!-- Section: Links  -->
+          <section class="">
+            <div class="container text-center text-md-start mt-5">
+              <!-- Grid row -->
+              <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                  <!-- Content -->
+                  <h6 class="text-uppercase fw-bold">BuyKar</h6>
+                  <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                    style="width: 60px; background-color: #7c4dff; height: 2px" />
+                  <p>
+                    Here you can Purchase for your Ride & for your favourite place.<br>
+                    Why are you waiting <span class="text-warning"><b>Get Ride!</b></span>
+
+                  </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold">Products</h6>
+                  <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                    style="width: 60px; background-color: #7c4dff; height: 2px" />
+                  <p>
+                    <a href="#!" class="text-white">Motor Bike's</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-white">Car's</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-white">E-Vehical's</a>
+                  </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold">links</h6>
+                  <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                    style="width: 60px; background-color: #7c4dff; height: 2px" />
+                  <p>
+                    <a href="#!" class="text-white">BuyKar Account</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-white">Become an Trader</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-white">Shipping Rates</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-white">Help</a>
+                  </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold">Contact</h6>
+                  <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                    style="width: 60px; background-color: #7c4dff; height: 2px" />
+                  <p><i class="fas fa-home mr-3"></i> The World Trade Center, OMR, Chennai </p>
+                  <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
+                  <p><i class="fas fa-phone mr-3"></i> + 3583159220</p>
+                  <p><i class="fas fa-print mr-3"></i> + 464644646</p>
+                </div>
+                <!-- Grid column -->
+              </div>
+              <!-- Grid row -->
+            </div>
+          </section>
+          <!-- Section: Links  -->
+
+          <!-- Copyright -->
+          <div class="text-center p-3" style="background-color: #2600ff">
+            © 2024 Copyright:
+            <a class="text-white" href="#">MDBuyKar.com</a>
+          </div>
+          <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+      </script>
+        
+
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="./Buykar.css">
+</head>
+
+<body>
+
+  <!-------Navbar------->
+  <nav class="navbar navbar-expand-lg navbar-light fs-6 h1" style="background-color: pink;">
+    <div class="container-fluid">
+      <a href="./Index.html"><img src="./Logo.png" alt="BrandName" style="width: 80px; height: 30px;"
+          class="me-5 ms-2"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-white">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./Index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Login</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <button class="btn btn-outline-light" type="submit">Guest</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+<!-- ----------------------------SignUp Form------------------------- -->
+  <div class="container">
+    <div class="row">
+      <div class="d-flex justify-content-center mt-5">
+
+        <div class="card mb-3" style="max-width: 740px;">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img src="./Shipping Img.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+
+            <div class="col-md-6">
+              <div class="card-body">
+                <h5 class="card-title fs-4 text-center" style="color: pink;">Sign Up</h5>
+                <form method="post" class="ms-5" id="form">
+                  <div class="col-4 col-md-4">
+                    <label for="Name">Name</label><br>
+                    <input type="text">
+                  </div><br>
+                  <div class="col-4 col-md-4">
+                    <label for="Email">Email</label><br>
+                    <input type="text">
+                  </div><br>
+                  <div class="col-4 col-md-4">
+                    <label for="Phone Number">PH.Number</label><br>
+                    <input type="number">
+                  </div><br>
+                  <div class="col-4 col-md-4">
+                    <label for="password">Password</label><br>
+                    <input type="password"><br><br>
+                  </div><br>
+                  <div class="text-center">
+                    <button style="background-color: pink;" class="btn btn-outline-light fs-6">Submit</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>

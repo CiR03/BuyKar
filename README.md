@@ -6,7 +6,7 @@ which you can purchase on our website. It starts with "B" for bike, has "k" in t
 This visually indicates the word "buy". 
 So, the combination of these elements results in "Buykar".
 
-This is My Own Project, Similarly E-Commerce Website.
+This is My Own Project, Similarly E-Commerce Interface only.
 
 Banner slide function with clickable option.
 

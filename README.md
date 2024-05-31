@@ -14,4 +14,4 @@ Check Out Button Function => [Start Ride] [SignUp] [DropDown] [NavBars] [Respons
 
 Footer Icons => Hover-Effect facebook, gmail,insta,linkedIn,github
 
-Note : Use Internet Connection.
+Note : Use Internet Connection. And Check out the video for a glimpse of what I've been working on it.!

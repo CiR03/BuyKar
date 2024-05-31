@@ -13,3 +13,5 @@ Banner slide function with clickable option.
 Check Out Button Function => [Start Ride] [SignUp] [DropDown] [NavBars] [Responsive-BurgerIcon]
 
 Footer Icons => Hover-Effect facebook, gmail,insta,linkedIn,github
+
+Note : Use Internet Connection.
